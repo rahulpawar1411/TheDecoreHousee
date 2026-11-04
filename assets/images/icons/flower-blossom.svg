@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <defs>
+    <radialGradient id="flowerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#F4ECE1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#E5C388" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <!-- 5-Petal Elegant Blossom -->
+  <g transform="translate(30, 30)">
+    <!-- Petal 1 -->
+    <path d="M0,0 C-10,-18 10,-18 0,0" transform="rotate(0)" fill="url(#flowerGrad)" stroke="#E5C388" stroke-width="0.7"/>
+    <!-- Petal 2 -->
+    <path d="M0,0 C-10,-18 10,-18 0,0" transform="rotate(72)" fill="url(#flowerGrad)" stroke="#E5C388" stroke-width="0.7"/>
+    <!-- Petal 3 -->
+    <path d="M0,0 C-10,-18 10,-18 0,0" transform="rotate(144)" fill="url(#flowerGrad)" stroke="#E5C388" stroke-width="0.7"/>
+    <!-- Petal 4 -->
+    <path d="M0,0 C-10,-18 10,-18 0,0" transform="rotate(216)" fill="url(#flowerGrad)" stroke="#E5C388" stroke-width="0.7"/>
+    <!-- Petal 5 -->
+    <path d="M0,0 C-10,-18 10,-18 0,0" transform="rotate(288)" fill="url(#flowerGrad)" stroke="#E5C388" stroke-width="0.7"/>
+    <!-- Center stamen -->
+    <circle cx="0" cy="0" r="3.5" fill="#D4AF37" opacity="0.8"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFFDF9"/>
+  </g>
+</svg>

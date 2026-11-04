@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E6C5" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#E5C388" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#C8A261" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="petalFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#E5C388" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Arching Stem -->
+  <g class="floral-stem" stroke="url(#goldGradient)" stroke-width="2" stroke-linecap="round">
+    <path d="M580,20 C480,80 400,200 320,320 C260,410 180,480 40,560" />
+    <path d="M380,230 C310,260 250,250 180,280" stroke-dasharray="2 3" opacity="0.6"/>
+    <path d="M280,370 C240,430 200,450 120,460" stroke-dasharray="2 3" opacity="0.6"/>
+  </g>
+
+  <!-- Large Blooming Peony/Rose -->
+  <g class="floral-bloom" transform="translate(420, 160)" stroke="url(#goldGradient)" stroke-width="1.4">
+    <!-- Outer Petals -->
+    <path d="M-60,-20 C-90,-60 -20,-110 30,-90 C80,-70 100,-20 70,30 C40,80 -30,90 -70,50 C-100,10 -80,-5 -60,-20 Z" fill="url(#petalFill)"/>
+    <!-- Mid Petals -->
+    <path d="M-40,-15 C-60,-45 -10,-80 25,-65 C60,-50 70,-10 50,25 C30,60 -20,65 -50,35 C-70,5 -55,-5 -40,-15 Z" fill="url(#petalFill)"/>
+    <!-- Inner Layers -->
+    <path d="M-25,-10 C-35,-30 0,-50 20,-40 C40,-30 45,0 30,20 C15,40 -15,40 -30,20 Z" fill="url(#petalFill)"/>
+    <circle cx="0" cy="0" r="14" stroke-dasharray="2 3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="6" fill="#E5C388" opacity="0.5"/>
+  </g>
+
+  <!-- Second Smaller Rose -->
+  <g class="floral-bloom-secondary" transform="translate(260, 340) scale(0.65)" stroke="url(#goldGradient)" stroke-width="1.4">
+    <path d="M-50,-15 C-75,-50 -15,-90 25,-75 C65,-60 80,-15 55,25 C30,65 -25,75 -55,40 Z" fill="url(#petalFill)"/>
+    <path d="M-30,-10 C-45,-30 0,-55 20,-45 C45,-35 50,0 35,20 C20,45 -15,45 -35,20 Z" fill="url(#petalFill)"/>
+    <circle cx="0" cy="0" r="12" stroke-dasharray="2 3" opacity="0.8"/>
+  </g>
+
+  <!-- Delicate Leaves along stem -->
+  <g class="floral-leaf" stroke="url(#goldGradient)" stroke-width="1.2" fill="url(#petalFill)">
+    <!-- Leaf 1 -->
+    <path d="M470,110 C520,80 560,110 565,140 C530,160 480,140 470,110 Z"/>
+    <line x1="470" y1="110" x2="540" y2="135" opacity="0.5"/>
+    <!-- Leaf 2 -->
+    <path d="M430,230 C465,220 510,250 515,280 C475,295 440,270 430,230 Z"/>
+    <line x1="430" y1="230" x2="495" y2="270" opacity="0.5"/>
+    <!-- Leaf 3 -->
+    <path d="M340,320 C365,300 410,320 415,350 C380,370 345,355 340,320 Z"/>
+    <line x1="340" y1="320" x2="395" y2="345" opacity="0.5"/>
+    <!-- Leaf 4 (Mirrored) -->
+    <path d="M280,260 C240,240 210,270 205,300 C240,310 270,290 280,260 Z"/>
+    <line x1="280" y1="260" x2="225" y2="290" opacity="0.5"/>
+    <!-- Leaf 5 -->
+    <path d="M210,400 C240,380 280,400 285,430 C250,450 215,430 210,400 Z"/>
+    <line x1="210" y1="400" x2="265" y2="425" opacity="0.5"/>
+    <!-- Leaf 6 (Lower) -->
+    <path d="M140,460 C110,440 80,470 75,500 C110,510 135,490 140,460 Z"/>
+    <line x1="140" y1="460" x2="95" y2="490" opacity="0.5"/>
+  </g>
+
+  <!-- Buds & Whimsical Tendrils with Sparkles -->
+  <g class="floral-buds" stroke="url(#goldGradient)" stroke-width="1.2">
+    <path d="M520,70 Q560,50 580,20" stroke-dasharray="1 3"/>
+    <circle cx="582" cy="18" r="4" fill="#E5C388" opacity="0.6"/>
+    <path d="M370,180 Q390,140 400,100" stroke-dasharray="1 3"/>
+    <circle cx="402" cy="98" r="3.5" fill="#E5C388" opacity="0.6"/>
+    <path d="M190,340 Q160,320 140,290" stroke-dasharray="1 3"/>
+    <circle cx="138" cy="288" r="3" fill="#E5C388" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle Diamond Stars -->
+  <path d="M340,110 L343,120 L353,123 L343,126 L340,136 L337,126 L327,123 L337,120 Z" fill="#E5C388" opacity="0.65"/>
+  <path d="M220,210 L222,217 L229,219 L222,221 L220,228 L218,221 L211,219 L218,217 Z" fill="#E5C388" opacity="0.65"/>
+  <path d="M120,380 L122,386 L128,388 L122,390 L120,396 L118,390 L112,388 L118,386 Z" fill="#E5C388" opacity="0.65"/>
+</svg>
