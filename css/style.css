@@ -1686,7 +1686,7 @@ body.menu-open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 24px 20px;
   text-align: center;
   transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -1716,7 +1716,10 @@ body.menu-open {
 
 /* Central Cinematic Play Button with Glowing Rings */
 .cinema-play-button-center {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -1729,10 +1732,11 @@ body.menu-open {
   border: none;
   cursor: pointer;
   transition: all var(--transition-fast);
+  z-index: 2;
 }
 
 .cinema-presentation-card:hover .cinema-play-button-center {
-  transform: scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
   box-shadow: 0 12px 40px rgba(212, 175, 55, 0.75);
 }
 
@@ -1766,6 +1770,12 @@ body.menu-open {
 }
 
 .cinema-bottom-meta {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 40px);
   background: rgba(18, 17, 16, 0.8);
   backdrop-filter: blur(10px);
   padding: 8px 18px;
@@ -1774,6 +1784,7 @@ body.menu-open {
   color: var(--text-light);
   font-size: 0.82rem;
   letter-spacing: 0.04em;
+  z-index: 1;
 }
 
 /* --------------------------------------------------------------------------
@@ -2274,9 +2285,39 @@ body.menu-open {
   font-weight: 700;
   color: #111111;
   line-height: 1.15;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   letter-spacing: -0.01em;
   transition: transform 0.3s ease;
+}
+
+.contact-with-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 0 0 18px;
+}
+
+.contact-with-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.55);
+}
+
+.contact-with-person {
+  font-family: var(--font-script);
+  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #A98334 0%, #C8A261 40%, #8A6A28 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-card-glass:hover .contact-title-luxury {
@@ -2545,6 +2586,30 @@ a.dev-highlight:focus {
   margin-bottom: 22px;
 }
 
+.footer-social-wrap .footer-col-title {
+  margin-bottom: 8px;
+}
+
+.footer-with-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 16px;
+}
+
+.footer-with-person {
+  font-family: var(--font-script);
+  font-size: clamp(1.55rem, 2.2vw, 1.95rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #F6E6C5 0%, #E5C388 45%, #C8A261 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer-contact-list {
   display: flex;
   flex-direction: column;
@@ -2612,6 +2677,10 @@ a.dev-highlight:focus {
   font-size: 0.82rem;
   color: var(--text-light-muted);
   gap: 4px;
+}
+
+.footer-dev-credit {
+  margin-top: 2px;
 }
 
 
@@ -3460,7 +3529,21 @@ a.dev-highlight:focus {
     height: 24px;
   }
   .cinema-bottom-meta {
-    font-size: 0.72rem;
-    padding: 6px 14px;
+    bottom: 12px;
+    font-size: 0.58rem;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    padding: 5px 10px;
+    max-width: calc(100% - 24px);
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cinema-bottom-meta {
+    font-size: 0.52rem;
+    padding: 4px 8px;
+    bottom: 10px;
   }
 }
