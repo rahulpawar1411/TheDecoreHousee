@@ -2397,6 +2397,13 @@ body.menu-open {
   line-height: 1.35;
 }
 
+a[href^="mailto:"] .capsule-text,
+a[href^="mailto:satyendrasen270@gmail.com"] {
+  text-transform: lowercase;
+  font-variant: normal;
+  letter-spacing: 0.01em;
+}
+
 .contact-capsule-item .capsule-icon {
   color: #111111;
   flex-shrink: 0;
